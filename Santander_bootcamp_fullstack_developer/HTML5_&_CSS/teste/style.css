@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+
+}
+
+.phone{
+    width: 465px;
+    height: 635px;
+    position: relative;
+    color: transparent;
+    background-position: center;
+    background-image: url(./img/phone.png);
+    background-repeat: no-repeat;
+}
+
+.phone img{
+    position: absolute;
+    color: transparent;
+    left: 155px;
+    top: 25px;
+}
+
+#img1{
+    background:url("./img/screenshot/1.png") no-repeat;
+    animation: cycleone 20s linear infinite;
+}
+
+#img2{
+    background:url("./img/screenshot/2.png") no-repeat;
+    animation: cycletwo 20s linear infinite;
+}
+
+#img3{
+    background:url("./img/screenshot/3.png") no-repeat;
+    animation: cyclethree 20s linear infinite;
+}
+
+#img4{
+    background:url("./img/screenshot/4.png") no-repeat;
+    animation: cyclefour 20s linear infinite;
+}
+
+@keyframes cycleone {
+    0% { 
+        z-index: 5;
+    }
+    25% { 
+        z-index: -2;
+    }
+    50% { 
+        z-index: -1;
+    }
+    75% { 
+        z-index: -0;
+    }
+    100% { 
+        z-index: 2;
+    }
+}
+@keyframes cycletwo {
+    0% { 
+        z-index: 0; 
+    }
+    25% { 
+        z-index: 2; 
+    }
+    50% { 
+        z-index: -2; 
+    }
+    75% { 
+        z-index: -1;
+    }
+}
+@keyframes cyclethree {
+    0% {
+        z-index: -1; 
+    }
+    25% { 
+        z-index: 0; 
+    }
+    50% { 
+        z-index: 2;
+    }
+    75% { 
+        z-index: -2;
+    }
+}
+@keyframes cyclefour {
+    0% { 
+        z-index: -2; 
+    }
+    25% { 
+        z-index: -1; 
+    }
+    50% { 
+        z-index: -0; 
+    }
+    75% { 
+        z-index: 1;
+    }
+    /* 100% { 
+        z-index: -2;
+    } */
+}
